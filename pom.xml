@@ -49,7 +49,7 @@
 		</dependency>
 		<dependency>
 		<groupId>org.testcontainers</groupId>
-		<artifactId>kafka(Testcontainers)</artifactId>
+		<artifactId>kafka</artifactId>
 		<version>1.19.1</version>
 		</dependency>
 	</dependencies>
