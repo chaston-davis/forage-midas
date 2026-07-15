@@ -1,3 +1,14 @@
 general:
 
  kafka-topic: trader-updates
+
+spring:
+kafka:
+    consumer: 
+key-deserializer: 
+org.apache.kafka.common.serialization.StringDeserializer valve-deserializer: org.springframework.kafka.support.serializer.Jsonbeserializer
+        properties:
+            spring.json.trusted.packages: "com.jpmc.midascore.foundation"
+producer: 
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+value-serializer: org.springframework.kafka.support.serializer.JsonSerializen
