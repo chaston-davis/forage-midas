@@ -6,8 +6,7 @@ spring:
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
-      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
+        spring.json.trusted.packages: com.jpmc.midascore.foundation
         isolation.level: read_committed
-    listener:
-      type: batch
